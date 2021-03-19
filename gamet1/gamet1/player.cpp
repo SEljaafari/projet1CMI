@@ -20,21 +20,26 @@ void player::draw(sf::RenderWindow& window)
 	sprite.setPosition(physique.location.x, physique.location.y);
 	window.draw(sprite);
 }
-
 void player::inputs()
 {
+	
+	
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 	{
 		physique.location.x -= speed;
+
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
 		physique.location.x += speed;
 	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-	{
-		physique.speed.y = -800;
-	}
+	//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && ( i <30 ))
+	//{
+		
+			//physique.speed.y = -800;
+		//	i += 1;
+		
+	//}
 	
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
 	{
@@ -58,7 +63,10 @@ void player::ticks(const sf::Time& deltat)
 	if (physique.location.y > border)
 	{
 		physique.location.y = border;
-		physique.speed.y = 0;
+		//physique.speed.y = 0;
+	//	i = 0;
+		physique.speed.y = -1200;
+
 
 	}
 
