@@ -1,2 +1,5 @@
-﻿  player.cpp
+﻿  main.cpp
+c:\sej\gamet1\gamet1\main.cpp(7): warning C4244: 'argument' : conversion de 'const float' en 'unsigned int', perte possible de données
+  player.cpp
+  Génération de code en cours...
   gamet1.vcxproj -> C:\Sej\gamet1\Debug\gamet1.exe

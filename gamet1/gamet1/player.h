@@ -14,9 +14,9 @@ class player
 private:
 	static constexpr float speed = 16.f;
 	//vecteurs location = vecteurs(0, 500);
-	physique physique
+	physique physique;
 
-public:
+ public:
 	player();
 	~player();
 
